@@ -54,7 +54,7 @@ int n = num.intValue()  //언박싱
 Integer num = 17;  //AutoBoxing
 int n = num;  //AutoUnBoxing
 ~~~  
-###  parse + 기본 타입명  
+###  parse + 기본 타입명() 메서드
 -  문자열을 기본 타입형으로 변환
 ###  equals() 메서드  
 -  ==연산자는 객체의 참조주소를 비교하기 때문에 래퍼 객체 내부의 값을 위해서 사용
