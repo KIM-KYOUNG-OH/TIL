@@ -1,10 +1,10 @@
 # Java
 
-  #  java.util  
-    ##  List   
-    -  동적으로 자료형의 갯수가 가변하는 상황일때 사용  
-    -  인터페이스 클래스  
-    -  java.util.List
+#  java.util  
+##  List   
+-  동적으로 자료형의 갯수가 가변하는 상황일때 사용  
+-  인터페이스 클래스  
+-  java.util.List
 ###  1. add() 메서드  
 ~~~
 .add(133)  //배열에 133 값 추가
