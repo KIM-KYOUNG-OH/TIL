@@ -57,4 +57,19 @@ int n = num;  //AutoUnBoxing
 ###  parse + 기본 타입명() 메서드
 -  문자열을 기본 타입형으로 변환
 ###  equals() 메서드  
--  ==연산자는 객체의 참조주소를 비교하기 때문에 래퍼 객체 내부의 값을 위해서 사용
+-  ==연산자는 객체의 참조주소를 비교하기 때문에 래퍼 객체 내부의 값을 위해서 사용  
+
+##  Number 클래스
+
+###  toString()  
+~~~
+Interger.toString(10);  //정수형을 문자열로 변환
+~~~  
+###  valueOf()  vs  parseInt  
+-  valueOf() : Integer객체로 변환  
+-  parseInt() : int형 데이터 리턴  
+-  valueOf함수에 내부적으로 parseInt사용
+###  charAt(index)  
+-  index번째 문자가 출력  
+###  subString(index,index)  
+-  시작부터과 끝까지의 문자열을 출력  
