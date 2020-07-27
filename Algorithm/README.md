@@ -9,13 +9,28 @@
 ~~~
 
 ###  Char형 int형 변환  
-1. 유니코드
+-  유니코드
 ~~~
 char - '0'
 ~~~  
-2. 래퍼클래스
+-  래퍼클래스
 ~~~
 Character.getNumericValue(변수.CharAt(i))
 ~~~   
+
+###  앞뒤 공백 제거  
+~~~
+.trim()
+~~~  
+
+###  isEmpty vs null  
+-  null : 객체가 생성되지 않음  
+-  isEmpty : "" 빈 객체가 생성됨  
+
+###  replaceAll() 
+~~~
+str = str.replaceAll(기존문자, 바꿀문자)
+~~~
+-  바꾸고싶은 문자열을 치환한다.  
 
 
