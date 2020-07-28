@@ -14,7 +14,7 @@
 ###  3. Char형 int형 변환  
 -  유니코드
 ~~~
-char - '0'
+char alphabet - 'a'
 ~~~  
 -  래퍼클래스
 ~~~
