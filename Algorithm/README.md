@@ -35,5 +35,8 @@ Character.getNumericValue(변수.CharAt(i))
 str = str.replaceAll(기존문자, 바꿀문자)
 ~~~
 
-
+###  7. boolean 타입 배열메모리 생성시 false로 생성됨  
+~~~
+boolean[] array = new boolean[5];  //array = {false, false, false, false, false,}
+~~~  
 
