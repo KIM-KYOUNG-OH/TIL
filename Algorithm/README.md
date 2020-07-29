@@ -40,3 +40,4 @@ str = str.replaceAll(기존문자, 바꿀문자)
 boolean[] array = new boolean[5];  //array = {false, false, false, false, false,}
 ~~~  
 
+###  8. return을 선언한 순간 함수를 즉시 종료  
