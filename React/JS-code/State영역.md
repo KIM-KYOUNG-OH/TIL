@@ -31,3 +31,42 @@ onClick={
 ```
 
 - 배열타입 데이터에 데이터를 추가하려면 concat 메서드를 사용한다
+```javascript
+state={
+        maxNo:3,
+        boards:[
+            {
+                brdno:1,
+                brdwriter:'캔디',
+                brdtitle:'안녕',
+                brddate:new Date()
+            },
+            {
+                brdno:2,
+                brdwriter:'안소니',
+                brdtitle:'반갑다',
+                brddate:new Date()
+            },
+            {
+                brdno:3,
+                brdwriter:'캐서린',
+                brdtitle:'리액트 공부중',
+                brddate:new Date()
+            }
+        ]
+}
+
+handleSave=(data)=>{
+        console.dir(data);
+
+        this.setState({
+            maxNo:++this.state.maxNo,
+            boards:this.state.boards.concat({
+                brdno:this.state.maxNo,
+                brddate:new Date(),
+                brdwriter:data.brdwriter,
+                brdtitle:data.brdtitle
+            })
+        })
+    }
+```
