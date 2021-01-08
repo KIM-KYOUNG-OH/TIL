@@ -16,3 +16,11 @@ yarn add axios
 ```terminal
 yarn add react-router-dom
 ```
+
+## 4. 리액트 프로젝트 서버에서 실행시키기 위해서 빌드하는 방법  
+```terminal
+yarn global add server
+cd 해당폴더
+yarn run build
+serve -s build
+```
