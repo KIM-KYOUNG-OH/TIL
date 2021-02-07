@@ -1,8 +1,10 @@
 # 통신 프로토콜  
-## 1. TCP(Transmission Control Protocol)  
-
-## 2. UDP(User Datagram Protocol)  
-
+### 1. TCP(Transmission Control Protocol)  
+- 연결형  
+- handshaking o  
+### 2. UDP(User Datagram Protocol)  
+- 비연결형  
+- handshaking x
 # 코어 네트워크  
 ### 1. 서킷 방식  
 - 자원 공유x
