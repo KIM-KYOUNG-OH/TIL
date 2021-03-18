@@ -1,4 +1,3 @@
-![스크린샷 2021-03-18 오후 9 51 44](https://user-images.githubusercontent.com/66231761/111629787-0399fe00-8835-11eb-902d-9c3707ec6f64.png)
 # Java  
 
 ## 프로그래밍 언어란?  
@@ -35,5 +34,14 @@
 
 ## JVM  
   - JVM은 실 운영체제를 대신해서 자바 프로그램을 실행하는 가상의 운영체제 역할을 한다  
-  ![캡쳐](/Users/kimgyeong-o/Desktop/스크린샷 2021-03-18 오후 9.51.44.png)  
+  ![스크린샷 2021-03-18 오후 9 51 44](https://user-images.githubusercontent.com/66231761/111629787-0399fe00-8835-11eb-902d-9c3707ec6f64.png)  
+  [출처] https://programmer-seva.tistory.com/2  
+  
+## JDK  
+  - Java SE 구현체는 JDK와 JRE 두가지 버전이 있다  
+  - JDK에는 JVM, 라이브러리 API, 컴파일러 등의 개발 도구가 포함되어 있다  
+  - JDK = JRE + 개발 도구
+## JRE  
+  - JRE에는 JVM, 라이브러리 API가 포함되어 있다  
+  - 이미 개발된 프로그램만 실행한다면 JRE만 설치하면 된다  
   
