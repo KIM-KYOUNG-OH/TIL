@@ -1,6 +1,6 @@
 # TIL(Today I Learn)
 
-## 목차  
+## 요약    
   - 프로그래밍 언어
     - [자바](https://github.com/KIM-KYOUNG-OH/TIL/tree/master/Programming-Language/Java)  
     - [자바스크립트](https://github.com/KIM-KYOUNG-OH/TIL/tree/master/Programming-Language/JavaScript)
