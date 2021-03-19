@@ -1,6 +1,5 @@
 # Git  
-
-# <VCS(Version Controll System)>
+- VCS(Version Controll System)  
 - 버전관리툴  
   
 ## reference  
