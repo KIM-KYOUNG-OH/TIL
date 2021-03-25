@@ -5,7 +5,7 @@
     - [자바](https://github.com/KIM-KYOUNG-OH/TIL/tree/master/Programming-Language/Java)  
     - [자바스크립트](https://github.com/KIM-KYOUNG-OH/TIL/tree/master/Programming-Language/JavaScript)
   - CS  
-    - OS
+    - [OS](https://github.com/KIM-KYOUNG-OH/TIL/tree/master/CS/OS)
     - [Network](https://github.com/KIM-KYOUNG-OH/TIL/tree/master/CS/Network)
   - DBMS
     - Oracle  
