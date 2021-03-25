@@ -45,3 +45,4 @@
   - JRE에는 JVM, 라이브러리 API가 포함되어 있다  
   - 이미 개발된 프로그램만 실행한다면 JRE만 설치하면 된다  
   
+[Java notion정리(👉 클릭시 이동)](https://www.notion.so/Java-3a4fb8298c8d4b1faaf5adefbe9ab2cb)
