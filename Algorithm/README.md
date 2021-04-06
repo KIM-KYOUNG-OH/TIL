@@ -83,4 +83,11 @@ print(v, end=' ')
 47. input()이 sys.stdin.readline()보다 느린 이유  
     - input()은 prompt message를 출력한다
     - input()은 입력 문자를 자동 strip()해서 반환한다  
+48. call by value  
+    - 함수 안에서 원시타입 전역변수 호출이나 인자값 사용시 복사된 값을 사용한다  
+    - 외부의 값은 변경되지 않음  
+50. call by reference  
+    - 함수 안에서 배열이나 객체타입 변수를 호출이나 인자값 사용시 변수의 레퍼런스값을 사용한다  
+    - 외부의 값도 변경됨  
+
 
