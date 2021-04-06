@@ -80,4 +80,7 @@ v = test
 print(v, end=' ')
 ```
 46. 2차원 배열은 [[]*int]*int 이런식으로 선언하면 절대 안됨(row 복사됨)  
+47. input()이 sys.stdin.readline()보다 느린 이유  
+    - input()은 prompt message를 출력한다
+    - input()은 입력 문자를 자동 strip()해서 반환한다  
 
