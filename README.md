@@ -1,6 +1,8 @@
 # TIL(Today I Learn)
 
-## 요약    
+### 👉 [notion 페이지](https://www.notion.so/TIL-09035c363500461ab4aff0bbbb423d19)
+
+## 목차    
   - 프로그래밍 언어
     - [자바](https://github.com/KIM-KYOUNG-OH/TIL/tree/master/Programming-Language/Java)  
     - [자바스크립트](https://github.com/KIM-KYOUNG-OH/TIL/tree/master/Programming-Language/JavaScript)
