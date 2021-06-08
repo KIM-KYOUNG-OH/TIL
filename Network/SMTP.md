@@ -1,0 +1,32 @@
+# SMTP란?
+- 간이 우편 전송 프로토콜(Simple Mail Transfer Protocol)  
+- 인터넷에서 이메일을 보내기 위해 이용되는 프로토콜  
+- TCP 포트번호: 25  
+- 메일 서버간 송수신 뿐만 아니라 메일 클라이언트에서 메일 서버로 메일을 보낼때에도 사용된다.  
+- 우리가 메일을 보낼때는 바로 상대방 컴퓨터로 메일을 송신하는 것이 아니라, 중간에 메일 서버를 거치게 되며, 메일 서버에서는 메일이 보관되고 다른 메일 서버로 보내는 우체국 같은 역할을 한다.
+- SMTP외에도 POP3/IMAP는 유저가 메일 서버에서 메일을 받기 위한 프로토콜이다.
+
+# POP3란?  
+- Post Office Protocol  
+- 원격 서버로부터 이메일을 받기 위한 프로토콜  
+- TCP 포트번호: 110  
+- 원격 서버로부터 이메일을 가져온 후 서버에서 이메일을 삭제한다.  
+- 전자메일을 다운로드한 후 동일한 컴퓨터를 사용하여야만 액세스할 수 있다.  
+
+# IMAP란?  
+- Internet Message Access Protocol  
+- 원격 서버로부터 이메일을 받기 위한 프로토콜  
+- TCP 포트번호: 143  
+- 온라인 모드와 오프라인 모드를 모두 지원하므로 POP3와 달리 이메일 메시지를 서버에 남겨두었다가 나중에 지울 수 있다.  
+- 어디서나 모든 장치에서 전자 메일에 엑세스할 수 있다.  
+- POP3에 비해 IMAP는 메일 서버와의 통신 트래픽이 높은 단점을 가지고 있다.  
+
+
+
+
+## Ref.  
+- [위키백과 - SMTP](https://ko.wikipedia.org/wiki/%EA%B0%84%EC%9D%B4_%EC%9A%B0%ED%8E%B8_%EC%A0%84%EC%86%A1_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)  
+- [위키백과 - POP](https://ko.wikipedia.org/wiki/%ED%8F%AC%EC%8A%A4%ED%8A%B8_%EC%98%A4%ED%94%BC%EC%8A%A4_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)  
+- [위키백과 - IMAP](https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%84%B7_%EB%A9%94%EC%8B%9C%EC%A7%80_%EC%A0%91%EC%86%8D_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)  
+- https://cheershennah.tistory.com/104  
+- 
