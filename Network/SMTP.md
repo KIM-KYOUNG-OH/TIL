@@ -21,6 +21,76 @@
 - 어디서나 모든 장치에서 전자 메일에 엑세스할 수 있다.  
 - POP3에 비해 IMAP는 메일 서버와의 통신 트래픽이 높은 단점을 가지고 있다.  
 
+# Spring Boot + JavaMail  
+## 의존성 주입  
+```xml
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-test</artifactId>
+  <scope>test</scope>
+</dependency>
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-mail</artifactId>
+</dependency>
+```  
+## Java mail관련 Interface or Class  
+### MailSender   
+- interface
+- 최상위 인터페이스  
+### JavaMailSender  
+- MailSender 하위 interface  
+- MimeMessageHelper class와 함께 사용되며 MimeMessage를 만들기 위해 사용된다  
+### JavaMailSenderImpl  
+- JavaMailSender interface의 구현 클래스  
+### SimpleMailMessage  
+- 보낸 사람, 받는 사람, 참조, 제목 및 텍스트 필드를 포함하는 간단한 메일 메시지를 만드는 데 사용된다  
+### MimeMessagePreparator  
+- MIME 메시지 준비를위한 콜백 인터페이스를 제공  
+### MimeMessageHelper  
+- MIME 메시지 생성을 위한 helper 클래스. HTML 레이아웃의 이미지, 일반적인 메일 첨부 파일 및 텍스트 콘텐츠에 대한 지원을 제공  
+
+## SMTP 서버 정보 등록하기  
+```properties
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=<login user to smtp server>
+spring.mail.password=<login password to smtp server>
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+```
+- spring.mail.properties.mail.smtp.starttls.enable : TLS connection 사용
+- password는 일반 비밀번호가 아닌 앱 비밀번호를 사용해야 한다  
+[앱 비밀번호 사용하기](https://support.google.com/accounts/answer/185833)  
+
+## simple email message 보내기
+- JavaMailSender  
+```java
+@Component
+public class EmailServiceImpl implements EmailService{
+
+    private JavaMailSender emailSender;
+
+    public EmailServiceImpl(JavaMailSender emailSender) {
+        this.emailSender = emailSender;
+    }
+
+    public void sendSimpleMessage(String to, String subject, String text) {
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setFrom("test@mail.com");
+        message.setTo(to);
+        message.setSubject(subject);
+        message.setText(text);
+        emailSender.send(message);
+    }
+}
+```
+
+## 첨부파일 붙여서 메일 보내기  
 
 
 
@@ -29,4 +99,4 @@
 - [위키백과 - POP](https://ko.wikipedia.org/wiki/%ED%8F%AC%EC%8A%A4%ED%8A%B8_%EC%98%A4%ED%94%BC%EC%8A%A4_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)  
 - [위키백과 - IMAP](https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%84%B7_%EB%A9%94%EC%8B%9C%EC%A7%80_%EC%A0%91%EC%86%8D_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)  
 - https://cheershennah.tistory.com/104  
-- 
+- [Guide to Spring Email](https://www.baeldung.com/spring-email)  
