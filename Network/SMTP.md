@@ -1,25 +1,29 @@
 # SMTP란?
 - 간이 우편 전송 프로토콜(Simple Mail Transfer Protocol)  
 - 인터넷에서 이메일을 보내기 위해 이용되는 프로토콜  
-- TCP 포트번호: 25  
+- 포트번호: 25  
 - 메일 서버간 송수신 뿐만 아니라 메일 클라이언트에서 메일 서버로 메일을 보낼때에도 사용된다.  
-- 우리가 메일을 보낼때는 바로 상대방 컴퓨터로 메일을 송신하는 것이 아니라, 중간에 메일 서버를 거치게 되며, 메일 서버에서는 메일이 보관되고 다른 메일 서버로 보내는 우체국 같은 역할을 한다.
-- SMTP외에도 POP3/IMAP는 유저가 메일 서버에서 메일을 받기 위한 프로토콜이다.
+- 우리가 메일을 보낼때는 바로 상대방 컴퓨터로 메일을 송신하는 것이 아니라, 중간에 메일 서버를 거치게 되며, 메일 서버에서는 메일이 보관되고 다른 메일 서버로 보내는 우체국 같은 역할을 한다  
+- Text만 보낼 수 있으므로 폰트나 첨부 파일 같은 것들은 text로 변환해서 보내거나 MIME(Multipartpurpose Internet Mail Extension)으로 보내야함  
 
 # POP3란?  
 - Post Office Protocol  
 - 원격 서버로부터 이메일을 받기 위한 프로토콜  
-- TCP 포트번호: 110  
-- 원격 서버로부터 이메일을 가져온 후 서버에서 이메일을 삭제한다.  
+- 포트번호: 110  
+- 원격 서버로부터 이메일을 가져온 후 원격 서버에서 원본 이메일을 삭제한다.  
 - 전자메일을 다운로드한 후 동일한 컴퓨터를 사용하여야만 액세스할 수 있다.  
+- 오프라인에서 메일을 볼 수 있다  
+- 서버 부담이 적다
 
 # IMAP란?  
 - Internet Message Access Protocol  
 - 원격 서버로부터 이메일을 받기 위한 프로토콜  
-- TCP 포트번호: 143  
-- 온라인 모드와 오프라인 모드를 모두 지원하므로 POP3와 달리 이메일 메시지를 서버에 남겨두었다가 나중에 지울 수 있다.  
+- 포트번호: 143  
+- POP3와 달리 원격 서버의 메일에 접근하고 그 메일을 Cache한다  
 - 어디서나 모든 장치에서 전자 메일에 엑세스할 수 있다.  
 - POP3에 비해 IMAP는 메일 서버와의 통신 트래픽이 높은 단점을 가지고 있다.  
+
+- - -  
 
 # Spring Boot + JavaMail  
 ## 의존성 주입  
@@ -93,6 +97,11 @@ public class EmailServiceImpl implements EmailService{
 - 파일이 첨부된 메일은 SimpleMailMessage 대신 JavaMail 라이브러리의 MIME multipart message를 사용한다  
 - org.springframework.mail.javamail.MimeMessageHelper 클래스를 사용  
 
+- - -  
+
+# Gmail API  
+
+
 
 ## Ref.  
 - [위키백과 - SMTP](https://ko.wikipedia.org/wiki/%EA%B0%84%EC%9D%B4_%EC%9A%B0%ED%8E%B8_%EC%A0%84%EC%86%A1_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)  
@@ -100,3 +109,5 @@ public class EmailServiceImpl implements EmailService{
 - [위키백과 - IMAP](https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%84%B7_%EB%A9%94%EC%8B%9C%EC%A7%80_%EC%A0%91%EC%86%8D_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)  
 - https://cheershennah.tistory.com/104  
 - [Guide to Spring Email](https://www.baeldung.com/spring-email)  
+- https://developers.google.com/gmail/api/guides/pop_imap_settings  
+- https://developers.google.com/gmail/api/quickstart/java
