@@ -96,7 +96,7 @@ app.get('/', function(req, res) {
 
 # Routing 리팩토링
 - Controller에 해당하는 라우팅 모듈들을 package를 나눠서 관리하고 index.js 미들웨어 하나를 둔다.
-<img width="400" alt="스크린샷 2021-11-22 오후 9 54 45" src="https://user-images.githubusercontent.com/66231761/142865390-449c75f4-7900-4451-bba9-fde26d3e26c3.png"
+<img width="400" alt="스크린샷 2021-11-22 오후 9 54 45" src="https://user-images.githubusercontent.com/66231761/142865390-449c75f4-7900-4451-bba9-fde26d3e26c3.png">
      
 - index.js
 
