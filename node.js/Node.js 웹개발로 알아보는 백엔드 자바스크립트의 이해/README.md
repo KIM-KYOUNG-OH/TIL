@@ -11,5 +11,5 @@
 - express template engine(ejs, jade, Pug....)
 - express 홈페이지 따라해보기
 
-# 강의 코드
+# 강의 Source Code
 https://github.com/KIM-KYOUNG-OH/learnNodeJS
