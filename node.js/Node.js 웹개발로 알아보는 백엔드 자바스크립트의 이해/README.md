@@ -5,11 +5,18 @@
 - SPA(Single Page Application)
 - npm(Node Package Manager)
     - 자바스크립트 개발자들끼리 만든 라이브러리를 공유하는 프로그램
-- vscode snippet 작성하기
+- snippet 작성하기
 - routing
 - client-server간 encoding
 - express template engine(ejs, jade, Pug....)
 - express 홈페이지 따라해보기
+- mysqljs
+    - escape문을 통해서 js에서 query를 편하게 호출할 수 있도록한 모듈
+- passportjs
+- custom callback을 이용한 json 응답 구현
+- Redirect ≠ window.location.href(화면전환)
+- Event Delegation(이벤트 위임)
+- var, let, const 차이
 
 # 강의 Source Code
 https://github.com/KIM-KYOUNG-OH/learnNodeJS
