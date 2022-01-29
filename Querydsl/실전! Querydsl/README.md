@@ -1,1 +1,2 @@
-# 실전! Querydsl - 
+# 실전! Querydsl - 김영한
+
