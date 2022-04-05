@@ -98,5 +98,20 @@ public class FileManageClass {
 # IOException은 언제 발생할까?
 - 매개변수로 넘어온 파일 이름이 파일이 아닌 경로를 의미할 경우
 - 권한 문제
-- 파일이 존재하지만 
-ㅇㅕ러
+- 파일이 존재하지만 여러가지 이유로 열 수 없는 경우
+
+# 주의할 점
+- try 중괄호안에 FileWriter나 BufferedWriter를 선언할 경우 finally 중괄호안에서 close()를 호출할 수 없으므로 참조 변수는 try 문장 전에 선언해야함
+- FileWriter, BufferedWriter 순으로 객체를 생성했다면 객체를 close할 때 BufferedWriter, FileWriter 순으로 닫아야 함
+
+# 텍스트 파일 읽기
+- FileReader, BufferedReader 사용
+
+# 정규표현식
+- 문자열 적합성 체크시 사용
+
+# InputStream & OutputStream
+- 네트워크 처리할 때 사용
+
+# Reader & Writer
+- 텍스트 기반 파일 처리할 때 사용
